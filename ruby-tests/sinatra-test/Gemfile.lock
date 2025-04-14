@@ -1,0 +1,130 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    base64 (0.2.0)
+    bigdecimal (3.1.9)
+    connection_pool (2.5.0)
+    dalli (3.2.8)
+    elastic-transport (8.0.0)
+      faraday (~> 1)
+      multi_json
+    elasticsearch (8.0.0)
+      elastic-transport (= 8.0.0)
+      elasticsearch-api (= 8.0.0)
+    elasticsearch-api (8.0.0)
+      multi_json
+    faraday (1.10.4)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-httpclient (~> 1.0)
+      faraday-multipart (~> 1.0)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.0)
+      faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
+      faraday-retry (~> 1.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.0)
+    faraday-excon (1.1.0)
+    faraday-httpclient (1.0.1)
+    faraday-multipart (1.1.0)
+      multipart-post (~> 2.0)
+    faraday-net_http (1.0.2)
+    faraday-net_http_persistent (1.2.0)
+    faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
+    faraday-retry (1.0.3)
+    google-protobuf (4.29.3)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.29.3-aarch64-linux)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.29.3-arm64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.29.3-x86-linux)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.29.3-x86_64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.29.3-x86_64-linux)
+      bigdecimal
+      rake (>= 13)
+    googleapis-common-protos-types (1.18.0)
+      google-protobuf (>= 3.18, < 5.a)
+    grpc (1.68.1)
+      google-protobuf (>= 3.25, < 5.0)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.68.1-aarch64-linux)
+      google-protobuf (>= 3.25, < 5.0)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.68.1-arm64-darwin)
+      google-protobuf (>= 3.25, < 5.0)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.68.1-x86-linux)
+      google-protobuf (>= 3.25, < 5.0)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.68.1-x86_64-darwin)
+      google-protobuf (>= 3.25, < 5.0)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.68.1-x86_64-linux)
+      google-protobuf (>= 3.25, < 5.0)
+      googleapis-common-protos-types (~> 1.0)
+    logger (1.6.5)
+    multi_json (1.15.0)
+    multipart-post (2.4.1)
+    mustermann (3.0.3)
+      ruby2_keywords (~> 0.0.1)
+    nio4r (2.7.4)
+    puma (6.5.0)
+      nio4r (~> 2.0)
+    rack (3.1.8)
+    rack-protection (4.1.1)
+      base64 (>= 0.1.0)
+      logger (>= 1.6.0)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.1.0)
+      base64 (>= 0.1.0)
+      rack (>= 3.0.0)
+    rackup (2.2.1)
+      rack (>= 3)
+    rake (13.2.1)
+    redis (5.3.0)
+      redis-client (>= 0.22.0)
+    redis-client (0.23.2)
+      connection_pool
+    ruby2_keywords (0.0.5)
+    sinatra (4.1.1)
+      logger (>= 1.6.0)
+      mustermann (~> 3.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.1.1)
+      rack-session (>= 2.0.0, < 3)
+      tilt (~> 2.0)
+    skywalking (0.1.0)
+      grpc (~> 1.68.0)
+    tilt (2.6.0)
+
+PLATFORMS
+  aarch64-linux
+  arm64-darwin
+  ruby
+  x86-linux
+  x86_64-darwin
+  x86_64-linux
+
+DEPENDENCIES
+  dalli (~> 3.2)
+  elasticsearch (= 8.0.0)
+  puma (~> 6.5)
+  rackup (~> 2.2)
+  redis (~> 5.3)
+  sinatra
+  skywalking (~> 0.1.0)
+
+BUNDLED WITH
+   2.5.23

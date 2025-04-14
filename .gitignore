@@ -153,3 +153,4 @@ Temporary Items
 *.db
 mini-sw-java/dist
 *.o
+*.iml

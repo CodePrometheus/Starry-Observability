@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>ash_bytebuddy_study</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>ash_bytebuddy_study</name>
+    <url>http://maven.apache.org</url>
+    <modules>
+        <module>bytebuddy_test</module>
+        <module>simple_jar</module>
+        <module>jdk-agent</module>
+        <module>instance-method-agent</module>
+        <module>static-method-agent</module>
+        <module>constructor-method-agent</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 单元测试 -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>RELEASE</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!-- Byte Buddy -->
+            <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy -->
+            <dependency>
+                <groupId>net.bytebuddy</groupId>
+                <artifactId>byte-buddy</artifactId>
+                <version>1.14.10</version>
+            </dependency>
+
+            <!-- 工具类 -->
+            <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.15.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

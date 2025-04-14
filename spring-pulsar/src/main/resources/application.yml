@@ -1,0 +1,14 @@
+spring:
+  pulsar:
+    client:
+      service-url: pulsar://localhost:6650
+    consumer:
+      subscription:
+        initial-position: earliest
+  
+  data:
+    redis:
+      host: localhost
+
+server:
+  port: 9002
